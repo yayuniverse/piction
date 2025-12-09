@@ -19,6 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@fontsource-variable/inter": "^5.2.6",
     "@phosphor-icons/web": "^2.1.2"
   },
