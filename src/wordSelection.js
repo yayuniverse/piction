@@ -156,9 +156,7 @@ const words = [
   "fresh water",
 ];
 
-function selectWord() {
+export default function selectWord() {
   const randomNumber = Math.floor(Math.random() * words.length);
   return words[randomNumber];
 }
-
-export default selectWord;
