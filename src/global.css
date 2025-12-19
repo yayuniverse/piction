@@ -91,3 +91,7 @@ button {
 .guessCountText {
   color: gainsboro;
 }
+
+.hidden {
+  display: none;
+}

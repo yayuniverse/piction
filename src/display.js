@@ -1,6 +1,8 @@
 const guessTextField = document.querySelector(".guessTextField");
 const resultText = document.querySelector(".resultText");
 const guessCountText = document.querySelector(".guessCountText");
+const submitBtn = document.querySelector(".submitBtn");
+const resetBtn = document.querySelector(".resetBtn");
 
 function displayImage(imageURL) {
   const image = document.querySelector(".generatedImage");
@@ -26,6 +28,15 @@ function hideGuessCount() {
   guessCountText.textContent = "";
 }
 
+function hideResultText() {
+  resultText.textContent = "";
+}
+
+function togglePrimaryButton() {
+  resetBtn.classList.toggle("hidden");
+  submitBtn.classList.toggle("hidden");
+}
+
 function displayResult(gameState, type) {
   if (type === "correct") {
     resultText.className = "resultText correctMessage";
@@ -42,4 +53,10 @@ function displayResult(gameState, type) {
   }
 }
 
-export { displayImage, clearField, displayResult };
+export {
+  displayImage,
+  clearField,
+  togglePrimaryButton,
+  displayResult,
+  hideResultText,
+};
